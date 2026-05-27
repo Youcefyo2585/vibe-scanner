@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+python-dotenv
+selenium
+gliner
+
+# Optional — enables AWS SSM Parameter Store as a secret backend.
+# Activate by setting SSM_PREFIX in the environment.
+# boto3

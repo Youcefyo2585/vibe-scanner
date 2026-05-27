@@ -1,0 +1,51 @@
+[project]
+name = "vibe-scanner"
+version = "1.0.0"
+description = "Discover and assess vibe-coded shadow apps across 11 platforms (Lovable, Replit, Base44, Netlify, Vercel, Cloudflare Pages, Fly.io, Firebase Hosting, Hugging Face Spaces, Streamlit, Glitch)."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+authors = [{name = "Zendata"}]
+keywords = ["security", "shadow-it", "vibe-coding", "supabase", "cve-2025-48757", "appsec"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+
+[project.urls]
+Repository = "https://github.com/Zendata/vibe-scanner"
+Issues = "https://github.com/Zendata/vibe-scanner/issues"
+
+[project.scripts]
+vibe-scan = "scans.vibe_scan_cli:main"
+
+[project.optional-dependencies]
+ssm = ["boto3"]
+dev = ["black", "isort", "flake8", "pre-commit", "pytest"]
+
+[tool.black]
+line-length = 121
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 121
+known_first_party = ["scans", "utils"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+lines_after_imports = 2
+
+[tool.pylint.FORMAT]
+max-line-length = 121
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["missing-docstring", "invalid-name"]

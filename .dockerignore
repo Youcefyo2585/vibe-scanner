@@ -1,0 +1,16 @@
+.git
+.gitignore
+.env
+.env.local
+venv/
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+bin/
+*.csv
+*.jsonl
+README.md
+LICENSE
